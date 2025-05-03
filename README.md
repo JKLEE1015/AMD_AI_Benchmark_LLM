@@ -38,24 +38,24 @@ xrt-smi configure --pmode performance
 Sample C++ Program
 The model_benchmark.exe test application provides a simple mechanism for running and evaluating Hybrid OGA models using the native OGA C++ APIs. The source code for this application can be used a reference implementation for how to integrate LLMs using the native OGA C++ APIs.
 
-The model_benchmark.exe test application can be used as follows:
+# The model_benchmark.exe test application can be used as follows:
 
-# To see available options and default settings
+To see available options and default settings
 .\model_benchmark.exe -h
 
-# To run with default settings
+To run with default settings
 .\model_benchmark.exe -i $path_to_model_dir  -f $prompt_file -l $list_of_prompt_lengths
 
-# To show more informational output
+To show more informational output
 .\model_benchmark.exe -i $path_to_model_dir  -f $prompt_file --verbose
 
-# To run with given number of generated tokens
+To run with given number of generated tokens
 .\model_benchmark.exe -i $path_to_model_dir  -f $prompt_file -l $list_of_prompt_lengths -g $num_tokens
 
-# To run with given number of warmup iterations
+To run with given number of warmup iterations
 .\model_benchmark.exe -i $path_to_model_dir  -f $prompt_file -l $list_of_prompt_lengths -w $num_warmup
 
-# To run with given number of iterations
+To run with given number of iterations
 .\model_benchmark.exe -i $path_to_model_dir  -f $prompt_file -l $list_of_prompt_lengths -r $num_iterations
 For example, for Llama-2-7b-chat:
 
